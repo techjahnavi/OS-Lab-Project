@@ -104,6 +104,26 @@ body {
     margin-left: 350px;
 }
 
+button{
+    width: 100px;
+    background-color: gray;
+    color:white;
+    font-weight: bold;
+    font-size: larger;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 2px;
+    margin: 5px 5px;
+}
+
+.container{
+    display: flex;
+    align-items: centre;
+    flex-direction: row;
+    height: 40px;
+    margin: 50px 50px ;
+}
+
 .p-btn {
     background-color: transparent;
     text-align: center;
