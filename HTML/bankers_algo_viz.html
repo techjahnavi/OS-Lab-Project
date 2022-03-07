@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="./css/BankersDyn.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="../favicon_io/site.webmanifest">
+
+    <!-- Navbar class starts here -->
+    <nav class="nav">
+        <div class="container">
+            <a class="brand-logo" href="../../../../index.html">Home</a>
+            <input class="menu-toggle" type="checkbox" id="toggle" />
+            <label class="menu" for="toggle">menu</label>
+            <ul>
+                <!-- <li><a class="hover" href="#">home</a></li> -->
+                <li>
+                    <div class="services">
+                        <a href="../HTML/index.html">Home</a>
+                        <a href="../HTML/deadlock_algo.html">Deadlock Algorithms</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</head>
+
+<body>
+
+
+    <div class="mtooltip">
+        Allocation<span class="mtooltiptext">Indicates the number of available resources of each type</span>
+    </div>
+    <div class="mtooltip">
+        Max<span class="mtooltiptext">Defines the maximum demand of each process in a system.</span>
+    </div>
+    <div class="mtooltip">
+        Available<span class="mtooltiptext">Defines the number of resources of each type currently allocated to each
+            process</span>
+    </div>
+    <div style="margin-top: 3%" class="mainTable" style="margin: 10% 20%">
+        <table class="container" id="myTable" style="font-size: 0.8em">
+            <tr>
+                <th>No.</th>
+                <th>A</th>
+                <th>B</th>
+                <th>C</th>
+                <th>A</th>
+                <th>B</th>
+                <th>C</th>
+                <th>A</th>
+                <th>B</th>
+                <th>C</th>
+            </tr>
+            <!-- <div id="AddDeleteRow"> -->
+            <tr id="p0">
+                <th>p0</th>
+                <td><input value="0" /></td>
+                <td><input value="1" /></td>
+                <td><input value="0" /></td>
+                <td><input value="7" /></td>
+                <td><input value="5" /></td>
+                <td><input value="3" /></td>
+                <td><input value="3" /></td>
+                <td><input value="3" /></td>
+                <td><input value="2" /></td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- <p class="lol">Computing process hahahhahahah</p> -->
+    <div class="controlPanel" style="margin-left: 1350px; margin-top: -30px">
+        <button onclick="removeRow()">-</button>
+        <button onclick="addRow()" style="margin-top: 45px">+</button>
+    </div>
+    <div class="submit" style="margin-top: 50px; margin-bottom: 30px">
+        <button onclick="submitValue()" style="margin-top: 45px">submit</button>
+    </div>
+
+    <div id="printProcess" style="margin-top: 45px"></div>
+
+    <script src="../JS/bankers_algo_viz.js"></script>
+</body>
+
+</html>

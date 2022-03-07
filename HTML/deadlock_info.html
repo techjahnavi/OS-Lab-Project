@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/deadlock.css">
+    <title>What is Deadlock?</title>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="../favicon_io/site.webmanifest">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="banner">
+        </div>
+    </header>
+    <div class="center">
+        <ul class="navbar">
+            <li>
+                <a href="index.html" class="active">Home</a>
+            </li>
+            <li>
+                <a href="concurrency_info.html">Concurrecy Information</a>
+            </li>
+            <li>
+                <a href="concurrency_algo.html">Concurrecy Algorithms</a>
+            </li>
+            <li>
+                <a href="deadlock_info.html">Deadlock Information</a>
+            </li>
+            <li>
+                <a href="deadlock_algo.html">Deadlock Algorithms</a>
+            </li>
+        </ul>
+    </div>
+    <div class="background">
+        <div class="information carousel" data-flickity='{ "wrapAround": true }'>
+            <div class="info-box carousel-cell">
+                <h1>Principles of Deadlock</h1>
+                <br>
+                <h3>Deadlock is a situation where a set of processes are blocked because each process is holding a
+                    resource and waiting for another resource acquired by some other process.</h3>
+                <br>
+                <h3>A process in operating system uses resources in the following way: </h3>
+                <ul>
+                    <li>Requests a resource </li>
+                    <li>Uses the resource</li>
+                    <li>Releases the resource</li>
+                </ul>
+                <br>
+
+                <h3>Consider an example when two trains are coming toward each other on the same track and there is only
+                    one track, none of the trains can move once they are in front of each other. A similar situation
+                    occurs in operating systems when there are
+                    two or more processes that hold some resources and wait for resources held by other(s). For example,
+                    in the below diagram, Process 1 is holding Resource 1 and waiting for resource 2 which is acquired
+                    by process 2, and process 2 is waiting
+                    for resource 1.</h3>
+            </div>
+
+            <div class="info-box1 carousel-cell">
+                <h1>Conditions for Deadlock</h1>
+                <br>
+                <ul>
+                    <li>
+                        <h2>Mutual Exclusion</h2>
+                        <p>One or more than one resources are non-shareable (only one process can usea a particular
+                            resource at a time).</p>
+                    </li>
+                    <li>
+                        <h2>Hold and Wait</h2>
+                        <p>A process is holding at least one resource and waiting for resources.</p>
+                    </li>
+                    <li>
+                        <h2>No Pre-emption</h2>
+                        <p>A resource cannot be taken from a process unless the process releases the resource.</p>
+                    </li>
+                    <li>
+                        <h2>Circular Wait</h2>
+                        <p>A set of processes are waiting for each other in circular form. </p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="info-box carousel-cell">
+                <h1>Advantages of Deadlock</h1>
+                <br>
+                <ul>
+                    <li>
+                        <p>This situation works well for processes which perform a single burst of activity</p>
+                    </li>
+                    <li>
+                        <p>No preemption needed for Deadlock.</p>
+                    </li>
+                    <li>
+                        <p>Convenient method when applied to resources whose state can be saved and restored easily.</p>
+                    </li>
+                    <li>
+                        <p>Feasible to enforce via compile-time checks</p>
+                    </li>
+                    <li>
+                        <p>Needs no run-time computation since the problem is solved in system design</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="info-box1 carousel-cell">
+                <h1>Methods for handling Deadlock</h1>
+                <br>
+                <ul>
+                    <li>
+                        <h2>Deadlock prevention or avoidance</h2>
+                        <p>The idea is to not let the system into a deadlock state. One can zoom into each category
+                            individually, Prevention is done by negating one of above mentioned necessary conditions for
+                            deadlock.</p>
+                        <p>We need to ensure that all information about resources that the process will need are known
+                            to us prior to the execution of the process.</p>
+                    </li>
+                    <li>
+                        <h2> Deadlock detection and recovery</h2>
+                        <p>Let deadlock occur, then do preemption to handle it once occurred</p>
+                    </li>
+                    <li>
+                        <h2>Ignore the problem altogether</h2>
+                        <p>If deadlock is very rare, then let it happen and reboot the system. This is the approach that
+                            both Windows and UNIX take.</p>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

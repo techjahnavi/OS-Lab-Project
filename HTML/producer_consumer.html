@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producer Consumer</title>
+    <link rel="stylesheet" href="../CSS/producer_consumer.css">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="../favicon_io/site.webmanifest">
+</head>
+
+<body>
+    <header>
+        <h1 class="header">Producer Consumer Problem</h1>
+    </header>
+    <div class="container">
+        <div class="box">
+            <h2>Explanation</h2>
+            <p>The Producer-Consumer problem is a classic problem this is used for multi-process synchronization i.e.
+                synchronization between more than one processes.</p>
+            <p>In the producer-consumer problem, there is one Producer that is producing something and there is one
+                Consumer that is consuming the products produced by the Producer. The producers and consumers share the
+                same memory buffer that is of fixed-size.</p>
+            <p>The job of the Producer is to generate the data, put it into the buffer, and again start generating data.
+                While the job of the Consumer is to consume the data from the buffer.</p>
+            <p>The producer should produce data only when the buffer is not full. If the buffer is full, then the
+                producer shouldn't be allowed to put any data into the buffer.</p>
+            <p>The consumer should consume data only when the buffer is not empty. If the buffer is empty, then the
+                consumer shouldn't be allowed to take any data from the buffer.</p>
+            <p>The producer and consumer should not access the buffer at the same time.</p>
+        </div>
+</body>
+
+</html>

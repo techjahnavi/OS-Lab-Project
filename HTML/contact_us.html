@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concurrency And Deadlock</title>
+
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+        integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+
+    <script src="https://kit.fontawesome.com/61820eb66c.js" crossorigin="anonymous"></script>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="../favicon_io/site.webmanifest">
+
+    <!-- CSS  -->
+    <link rel="stylesheet" href="../CSS/contact_us.css">
+</head>
+
+<body>
+    <header class="header">
+        <!-- Left div/box for logo -->
+        <div class="left">
+            <img src="../Images/logo.png" alt="LOGO">
+        </div>
+
+        <!-- Center div/box for menu -->
+        <div class="center">
+            <ul class="navbar">
+                <li>
+                    <a href="index.html" class="active">Home</a>
+                </li>
+                <li>
+                    <a href="#">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+        <!-- Right div/box for buttons
+        <div class="right">
+            <button class="btn">
+                Call Us
+            </button>
+            <button class="btn">
+                Email Us
+            </button>
+        </div> -->
+    </header>
+    <section class="sec" id="team">
+        <div class="content1">
+            <div class="mxw800p">
+                <h3>Meet Our Team</h3>
+                <p>
+                    It's about having a personal desire to overcome a challenge, to
+                    produce high-quality work, or to interact with team members you like
+                    and trust.
+                </p>
+            </div>
+            <div class="teamBx">
+                <div class="member">
+                    <div class="imgBX">
+                        <img src="#" alt="" />
+                    </div>
+                    <div class="details">
+                        <div>
+                            <h2>
+                                Devesh Patel <br />
+                                <span>Frontend Developer</span>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="member">
+                    <div class="imgBX">
+                        <img src="#" alt="" />
+                    </div>
+                    <div class="details">
+                        <div>
+                            <h2>
+                                Jahnavi Lalwani<br>
+                                <span>Frontend Developer</span>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="member">
+                    <div class="imgBX">
+                        <img src="#" alt="" />
+                    </div>
+                    <div class="details">
+                        <div>
+                            <h2>
+                                Jay Sanghavi <br />
+                                <span>Frontend Developer and Tester</span>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="member">
+                    <div class="imgBX">
+                        <img src="#" alt="" />
+                    </div>
+                    <div class="details">
+                        <div>
+                            <h2>
+                                Aakash Bhandary<br />
+                                <span>Backend Developer</span>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="member">
+                    <div class="imgBX">
+                        <img src="#" alt="" />
+                    </div>
+                    <div class="details">
+                        <div>
+                            <h2>
+                                Aakash Malvi<br />
+                                <span>Backend Developer</span>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Section 5 -->
+    <div class="centeraligned">
+        <section class="contact" id="contact">
+            <div class="heading white">
+                <h2>Contact Us</h2>
+                <p>Get in touch with us with a single message</p>
+            </div>
+            <div class="content">
+                <div class="contactInfo">
+                    <h3>Contact Info</h3>
+                    <div class="contactInfoBx">
+                        <div class="box">
+                            <div class="icon">
+                                <i class="fa fa-map-marker"></i>
+                            </div>
+                            <div class="text">
+                                <h3>Address</h3>
+                                <p>
+                                    Pandit Deendayal Energy University <br />Raysan, Gandhinagar
+                                    <br />382421
+                                </p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="icon">
+                                <i class="fa fa-phone"></i>
+                            </div>
+                            <div class="text">
+                                <h3>Phone</h3>
+                                <p>+917427855239</p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="icon">
+                                <i class="fa fa-envelope-o"></i>
+                            </div>
+                            <div class="text">
+                                <h3>Email</h3>
+                                <p>Jahnavi.lce20@sot.pdpu.ac.in</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <section>
+        <div class="copyright">
+            <p>Copyright &#169; 2022 OS Lab project. All Right Reserved.</p>
+        </div>
+        <script type="text/javascript">
+            window.addEventListener("scroll", function () {
+                var header = document.querySelector("header");
+                header.classList.toggle("sticky", window.scrollY > 0);
+            });
+            function toggleMenu() {
+                var menuToggle = document.querySelector(".toggle");
+                var menu = document.querySelector(".menu");
+                menuToggle.classList.toggle("active");
+                menu.classList.toggle("active");
+            }
+        </script>
+    </section>
+
+</body>
+
+</html>

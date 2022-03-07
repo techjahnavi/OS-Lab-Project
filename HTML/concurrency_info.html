@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What is Concurrency?</title>
+    <link rel="stylesheet" href="../CSS/conc_info.css">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="../favicon_io/site.webmanifest">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="banner">
+        </div>
+    </header>
+
+    <div class="center">
+        <ul class="navbar">
+            <li>
+                <a href="index.html" class="active">Home</a>
+            </li>
+            <li>
+                <a href="concurrency_info.html">Concurrecy Information</a>
+            </li>
+            <li>
+                <a href="concurrency_algo.html">Concurrecy Algorithms</a>
+            </li>
+            <li>
+                <a href="deadlock_info.html">Deadlock Information</a>
+            </li>
+            <li>
+                <a href="deadlock_algo.html">Deadlock Algorithms</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="background">
+
+        <div class="information carousel" data-flickity='{ "wrapAround": true }'>
+
+            <div class="info-box carousel-cell">
+                <h1>Principles of Concurrency</h1>
+                <h3>Both interleaved and overlapped processes can be viewed as examples of concurrent processes, they
+                    both present the same problems.</h3>
+                <br>
+                <h3>The relative speed of execution cannot be predicted. It depends on the following: </h3>
+                <ul>
+                    <li>The Activities of other processes</li>
+                    <li>The way the operating system handles interrupts</li>
+                    <li>The scheduling policies of the operating system</li>
+                </ul>
+            </div>
+            <div class="info-box1 carousel-cell">
+                <h1>Problems in Concurrency</h1>
+                <ul>
+                    <li>
+                        <h2>Sharing Global Resources</h2>
+                        <p>Sharing global resources safely is difficult. If two processes both make use of a global
+                            variable and both perform read and write on that variable, then the order in which various
+                            read and write are executed is critical.</p>
+                    </li>
+                    <li>
+                        <h2>Optimal allocation of resources </h2>
+                        <p>It is difficult for the operating system to manage the allocation of resources optimally.
+                        </p>
+                    </li>
+                    <li>
+                        <h2>Locating programming errors</h2>
+                        <p>It is very difficult to locate a programming error because reports are usually not
+                            reproducible.</p>
+                    </li>
+                    <li>
+                        <h2>Locking the channel</h2>
+                        <p>It may be inefficient for the operating system to simply lock the channel and prevents its
+                            use by other processes.</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="info-box1 carousel-cell">
+                <h1>Advantages of Concurrency</h1>
+                <ul>
+                    <li>
+                        <h2>Running of multiple applications</h2>
+                        <p>It enables us to run multiple applications at the same time.</p>
+                    </li>
+                    <li>
+                        <h2>Better resource utilization</h2>
+                        <p>It enables the resources that are unused by one application to be used for other
+                            applications.</p>
+                    </li>
+                    <li>
+                        <h2>Better average response time</h2>
+                        <p>Without concurrency, each application has to be run to completion before the next one can be
+                            run.</p>
+                    </li>
+                    <li>
+                        <h2>Better Performance</h2>
+                        <p>It enables better performance by the operating system. When one application uses only the
+                            processor and another application uses only the disk drive then the time to run both
+                            applications concurrently to completion will be shorter
+                            than the time to run each application consecutively.</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="info-box carousel-cell">
+                <h1>Drawbacks of Concurrency</h1>
+                <ul>
+                    <li>
+                        <h3> It is required to protect multiple applications from one another. </h3>
+                    </li>
+                    <li>
+                        <h3>It is required to coordinate multiple applications through additional mechanisms.</h3>
+                    </li>
+                    <li>
+                        <h3>Additional performance overheads and complexities in operating systems are required for
+                            switching among applications.</h3>
+                    </li>
+                    <li>
+                        <h3>Sometimes running too many applications concurrently leads to severely degraded performance.
+                        </h3>
+                    </li>
+                </ul>
+            </div>
+            <div class="info-box1 carousel-cell">
+                <h1>Issues of Concurrency</h1>
+                <ul>
+                    <li>
+                        <h2>Non-Atomic</h2>
+                        <p>Operations that are non-atomic but interruptible by multiple processes can cause problems.
+                        </p>
+                    </li>
+                    <li>
+                        <h2>Race Condition</h2>
+                        <p>A race condition occurs when the outcome depends on which of several processes gets to a
+                            point first.</p>
+                    </li>
+                    <li>
+                        <h2>Blocking</h2>
+                        <p>Processes can block waiting for resources. A process could be blocked for a long period
+                            waiting for input from a terminal. If the process is required to periodically update some
+                            data, this would be very undesirable.</p>
+                    </li>
+                    <li>
+                        <h2>Starvation</h2>
+                        <p>It occurs when a process does not obtain service to progress.</p>
+                    </li>
+                    <li>
+                        <h2>Deadlock</h2>
+                        <p>It occurs when two processes are blocked hence neither can proceed.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

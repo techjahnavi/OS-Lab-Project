@@ -1,0 +1,182 @@
+/* Resetting CSS */
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+/* CSS on header */
+
+header {
+    background: url(../Images/bg7.png) repeat;
+    height: 199px;
+}
+
+.background {
+    background: url(../Images/bg7.png) repeat;
+    background-attachment: fixed;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+.information::before {
+    /* border: 5px solid green; */
+    /* display: block; */
+    content: "";
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 1;
+    position: absolute;
+    width: 100%;
+}
+
+
+/* CSS on information */
+
+.information {
+    top: 90px;
+    position: absolute;
+    /* border: 2px solid red; */
+    /* display: flex; */
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* CSS on first info box */
+
+.info-box {
+    width: 59%;
+    /* border: 2px solid blue;
+    border-radius: 10px; */
+    padding: 10px;
+    /* background-color: rgb(229, 225, 255); */
+    margin: 20px;
+}
+
+.info-box h1 {
+    text-align: center;
+    margin: 10px;
+}
+
+.info-box p {
+    font-size: 1.2rem;
+}
+
+.info-box ul li {
+    margin-left: 70px;
+    font-size: 1.5rem;
+}
+
+
+/* CSS on second info box */
+
+.info-box1 {
+    width: 59%;
+    /* border: 2px solid blue;
+    border-radius: 10px; */
+    margin: 20px;
+    padding: 10px;
+    /* background-color: rgb(229, 225, 255); */
+}
+
+.info-box1 h1 {
+    text-align: center;
+}
+
+.info-box1 ul {
+    padding-left: 20px;
+}
+
+.info-box1 li {
+    font-size: 1.5rem;
+    margin: 15px;
+}
+
+.info-box1 h2 {
+    font-size: 1.5rem;
+    padding-bottom: 5px;
+}
+
+
+/* Deadlock Image  */
+
+.deadlock-img {
+    width: 500px;
+    height: 300px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    display: block;
+    margin: auto;
+}
+
+.carousel-cell {
+    width: 66%;
+    margin-right: 10px;
+    /* background: #8C8; */
+    border-radius: 5px;
+}
+
+.info-box {
+    width: 95%;
+}
+
+.info-box1 {
+    width: 95%;
+}
+
+.banner {
+    height: 199px;
+    width: auto;
+    background-image: url(../Images/concurrency.gif);
+    background-attachment: fixed;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+p{
+    font-size: 1.25em;
+}
+
+.navbar {
+    display: flex;
+    background-color: black;
+    padding: 15px;
+    position: sticky;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar li {
+    display: inline-block;
+}
+
+.navbar li a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 10px;
+    margin: 0px;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar li a:hover {
+    color: black;
+    background-color: white;
+    text-decoration: underline;
+}
+
+.navbar li a.active {
+    /* color: lightpink; */
+    font-weight: 400;
+}
+
+.center {
+    background-color: black;
+    align-items: center;
+}

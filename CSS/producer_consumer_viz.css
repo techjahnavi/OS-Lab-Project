@@ -1,0 +1,149 @@
+body {
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+    background: url(../Images/bg7.png) repeat;
+}
+
+.left {
+    display: inline-block;
+    /* border: 2px solid red; */
+    color: white;
+    opacity: 1;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    padding-right: 50px;
+}
+
+.left img {
+    width: 55px;
+    /* height: 30px; */
+}
+
+.center {
+    display: block;
+    margin: 10px auto;
+    width: 35%;
+    opacity: 1;
+    /* To use margin auto, we need display as block and particular width */
+    /* border: 2px solid white; */
+    color: white;
+}
+
+.navbar {
+    display: inline-block;
+}
+
+.navbar li {
+    display: inline-block;
+}
+
+.navbar li a {
+    color: white;
+    text-decoration: none;
+    padding: 20px 20px;
+    margin: 0px;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar li a:hover {
+    color: black;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.navbar li a.active {
+    /* color: lightpink; */
+    font-weight: 400;
+}
+
+.visual {
+    margin: 40px;
+}
+
+.visual h1 {
+    color: white;
+    font-size: 3rem;
+}
+
+.visual p {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.form-para {
+    color: white;
+    margin: 10px 40px;
+    font-size: 1.3rem;
+}
+
+#bufferSize {
+    color: black;
+    margin: 10px 40px;
+    font-size: 1.3rem;
+}
+
+#nProducers {
+    color: black;
+    margin: 10px 40px;
+    font-size: 1.3rem;
+}
+
+#nConsumers {
+    color: black;
+    margin: 10px 40px;
+    font-size: 1.3rem;
+}
+
+#textArea {
+    font-size: 22px;
+    margin-top: -400px;
+    margin-left: 350px;
+}
+
+.p-btn {
+    background-color: transparent;
+    text-align: center;
+    color: white;
+    margin: 10px 5px 0px 40px;
+    font-size: 1.3rem;
+    border: 2px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px;
+    width: 8%;
+}
+
+.p-btn:hover {
+    color: black;
+    background-color: white;
+}
+
+.p-btn a {
+    text-decoration: none;
+}
+
+.p-btn1 {
+    background-color: transparent;
+    text-align: center;
+    color: white;
+    /* margin: 10px 40px; */
+    font-size: 1.3rem;
+    border: 2px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px;
+    width: 8%;
+}
+
+.p-btn1:hover {
+    color: black;
+    background-color: white;
+}
+
+.p-btn1 a {
+    text-decoration: none;
+}

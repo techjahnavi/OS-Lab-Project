@@ -1,0 +1,136 @@
+/* Resetting CSS */
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background: url(../Images/bg3.jpg) no-repeat;
+}
+
+.left {
+    display: inline-block;
+    /* border: 2px solid red; */
+    color: white;
+    opacity: 1;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    padding-right: 50px;
+}
+
+.left img {
+    width: 55px;
+    /* height: 30px; */
+}
+
+.center {
+    display: block;
+    margin: 10px auto;
+    width: 25%;
+    opacity: 1;
+    /* To use margin auto, we need display as block and particular width */
+    /* border: 2px solid white; */
+    color: white;
+}
+
+.right {
+    display: inline-block;
+    /* border: 2px solid green; */
+    color: white;
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    opacity: 1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+    display: inline-block;
+}
+
+.navbar li {
+    display: inline-block;
+}
+
+.navbar li a {
+    border-radius: 35px;
+    color: white;
+    text-decoration: none;
+    padding: 30px 20px;
+    margin: 0px;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar li a:hover {
+    color: black;
+    background-color: white;
+}
+
+.navbar li a.active {
+    /* color: lightpink; */
+    font-weight: 400;
+}
+
+.btn {
+    margin: 19px 5px;
+    color: white;
+    background-color: transparent;
+    opacity: 1;
+    padding: 3px 12px;
+    /* border: 1px solid grey; */
+    border-color: transparent;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: lightsteelblue;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 40%;
+    background-color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.box h1 {
+    text-align: center;
+    color: white;
+    font-size: 2.7rem;
+}
+
+.box p {
+    text-align: center;
+    color: white;
+}
+
+.p-btn {
+    background-color: transparent;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    font-size: 1.1rem;
+    border: 2px solid lightslategray;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 49.5%;
+}
+
+.p-btn:hover {
+    color: black;
+    background-color: white;
+}
+
+.p-btn a {
+    text-decoration: none;
+}

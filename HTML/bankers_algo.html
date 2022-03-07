@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banker's Algorithm</title>
+    <link rel="stylesheet" href="../CSS/bankers_algo.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="header">Banker's Algorithm</h1>
+    </header>
+    <div class="container">
+        <div class="box">
+            <h2>Explanation</h2>
+            <p>The banker's algorithm is a resource allocation and deadlock avoidance algorithm that tests for safety by
+                simulating the allocation for predetermined maximum possible amounts of all resources, then makes an
+                “s-state” check to test for possible
+                activities, before deciding whether allocation should be allowed to continue.</p>
+            <p>Banker's algorithm is named so because it is used in banking system to check whether loan can be
+                sanctioned to a person or not. Suppose there are n number of account holders in a bank and the total sum
+                of their money is S. If a person applies
+                for a loan then the bank first subtracts the loan amount from the total money that bank has and if the
+                remaining amount is greater than S then only the loan is sanctioned. It is done because if all the
+                account holders comes to withdraw
+                their money then the bank can easily do it.</p>
+            <p>After this the current process enters it's critical section and adds or removes a random number from the
+                shared buffer. After completing the critical section, it sets it's own flag to false, indication it does
+                not wish to execute anymore.</p>
+            <p>The program runs for a fixed amount of time before exiting. This time can be changed by changing value of
+                the macro RT.</p>
+        </div>
+        <div class="box">
+            <h2>Advantages</h2>
+            <ul>
+                <li>
+                    <p>It contains various resources that meet the requirements of each process.</p>
+                </li>
+                <li>
+                    <p>Each process should provide information to the operating system for upcoming resource requests,
+                        the number of resources, and how long the resources will be held.</p>
+                </li>
+                <li>
+                    <p>It helps the operating system manage and control process requests for each type of resource in
+                        the computer system.</p>
+                </li>
+                <li>
+                    <p>The algorithm has a Max resource attribute that represents indicates each process can hold the
+                        maximum number of resources in a system.></p>
+                </li>
+            </ul>
+        </div>
+        <div class="box">
+            <h2>Disadvantages</h2>
+            <ul>
+                <li>
+                    <p>It requires a fixed number of processes, and no additional processes can be started in the system
+                        while executing the process</p>
+                </li>
+                <li>
+                    <p>The algorithm does no longer allows the processes to exchange its maximum needs while processing
+                        its tasks.</p>
+                </li>
+                <li>
+                    <p>Each process has to know and state their maximum resource requirement in advance for the system.
+                    </p>
+                </li>
+                <li>
+                    <p>The number of resource requests can be granted in a finite time, but the time limit for
+                        allocating the resources is one year.</p>
+                </li>
+            </ul>
+        </div>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concurrency Algorithms</title>
+    <link rel="stylesheet" href="../CSS/conc_algo.css">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="../favicon_io/site.webmanifest">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="banner">
+        </div>
+    </header>
+
+    <div class="center">
+        <ul class="navbar">
+            <li>
+                <a href="index.html" class="active">Home</a>
+            </li>
+            <li>
+                <a href="concurrency_info.html">Concurrecy Information</a>
+            </li>
+            <li>
+                <a href="concurrency_algo.html">Concurrecy Algorithms</a>
+            </li>
+            <li>
+                <a href="deadlock_info.html">Deadlock Information</a>
+            </li>
+            <li>
+                <a href="deadlock_algo.html">Deadlock Algorithms</a>
+            </li>
+        </ul>
+    </div>
+    <div class="information carousel" data-flickity='{ "wrapAround": true }'>
+        <div class="box carousel-cell">
+            <h1>Peterson's Algorithm</h1>
+            <h4>Peterson's algorithm(or Peterson's solution) is a concurrent programming algorithm for mutual exclusion
+                that allows two or more processes to share a single-use resource without conflict, using only shared
+                memory for communication. It was formulated
+                by Gary L. Peterson in 1981. While Peterson's original formulation worked with only two processes, the
+                algorithm can be generalized for more than two.</h4>
+            <a href="../HTML/peterson_algo.html"><button class="p-btn">Information</button></a>
+            <!-- <a href="../HTML/peterson_algo_viz.html"><button class="p-btn">Visualization</button></a> -->
+            <a href="#"><button class="p-btn">Visualization</button></a>
+        </div>
+        <div class="box carousel-cell">
+            <h1>Producer & Consumer Problem</h1>
+            <h4> A producer can produce an item and can place in the buffer. A consumer can pick items and can consume
+                them. We need to ensure that when a producer is placing an item in the buffer, then at the same time
+                consumer should not consume any item.
+                In this problem, buffer is the critical section. </h4>
+            <a href="../HTML/producer_consumer.html"><button class="p-btn">Information</button></a>
+            <a href="../HTML/producer_consumer_viz.html"><button class="p-btn">Visualization</button></a>
+        </div>
+        <div class="box carousel-cell">
+            <h1>Test & Set Lock</h1>
+            <h4> Test and Set is a hardware solution to the synchronization problem. In Test and Set, we have a shared
+                lock variable which can take either of the two values, 0 or 1. Before entering into the critical
+                section, a process inquires about the lock.
+                If it is locked, it keeps on waiting until it becomes free and if it is not locked, it takes the lock
+                and executes the critical section. </h4>
+            <a href="../HTML/tsl.html"><button class="p-btn">Information</button></a>
+            <!-- <a href="#"><button class="p-btn">Visualization</button></a> -->
+            <a href="../HTML/tsl_viz.html"><button class="p-btn">Visualization</button></a>
+        </div>
+    </div>
+
+</body>
+
+</html>

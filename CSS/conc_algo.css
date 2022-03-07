@@ -1,0 +1,151 @@
+/* Resetting CSS */
+
+header {
+    background: url(../Images/bg7.png);
+    height: 199px;
+}
+
+body {
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+    background: url(../Images/bg7.png) repeat;
+    /* background: rgb(1, 0, 27);
+    background: linear-gradient(90deg, rgba(1, 0, 27, 1) 39%, rgba(75, 75, 75, 1) 100%); */
+}
+
+.btn {
+    margin: 19px 5px;
+    color: white;
+    background-color: transparent;
+    opacity: 1;
+    padding: 3px 12px;
+    /* border: 1px solid grey; */
+    border-color: transparent;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: lightsteelblue;
+}
+
+.information::before {
+    /* border: 5px solid green; */
+    /* display: block; */
+    content: "";
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 1;
+    position: absolute;
+    width: 100%;
+}
+
+
+/* CSS on information */
+
+.information {
+    top: 90px;
+    position: absolute;
+    /* border: 2px solid red; */
+    /* display: flex; */
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    width: 40%;
+    background-color: transparent;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.box h1 {
+    text-align: center;
+    color: white;
+    font-size: 2.7rem;
+}
+
+.box h4 {
+    text-align: center;
+    color: white;
+}
+
+.p-btn {
+    align-self: center;
+    background-color: transparent;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    font-size: 1.1rem;
+    border: 2px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 49.5%;
+}
+
+.p-btn:hover {
+    color: black;
+    background-color: white;
+}
+
+.p-btn a {
+    text-decoration: underline;
+}
+
+.banner {
+    height: 199px;
+    width: auto;
+    background-image: url(../Images/concurrencyAlgos.gif);
+    background-attachment: fixed;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.carousel-cell {
+    width: 66%;
+    margin-right: 20px;
+    /* background: #8C8; */
+    border-radius: 15px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.navbar {
+    display: flex;
+    background-color: black;
+    padding: 15px;
+    position: sticky;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar li {
+    display: inline-block;
+}
+
+.navbar li a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 10px;
+    margin: 0px;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar li a:hover {
+    color: black;
+    background-color: white;
+    text-decoration: underline;
+}
+
+.navbar li a.active {
+    /* color: lightpink; */
+    font-weight: 400;
+}
+
+.center {
+    background-color: black;
+}

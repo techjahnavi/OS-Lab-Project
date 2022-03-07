@@ -1,0 +1,149 @@
+/* Resetting CSS */
+
+body {
+    margin: 0px;
+    padding: 0px;
+    /* background: url(../Images/bg8.png) no-repeat; */
+    background: url(../Images/bg7.png);
+    background-size: cover;
+   
+}
+
+.left {
+    display: inline-block;
+    /* border: 2px solid red; */
+    color: white;
+    opacity: 1;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    padding-right: 50px;
+}
+
+.left img {
+    width: 55px;
+    /* height: 30px; */
+}
+
+.right {
+    display: inline-block;
+    /* border: 2px solid green; */
+    color: white;
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    opacity: 1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btn {
+    margin: 19px 5px;
+    color: white;
+    background-color: transparent;
+    opacity: 1;
+    padding: 3px 12px;
+    /* border: 1px solid grey; */
+    border-color: transparent;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: lightsteelblue;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    padding: 15px;
+    margin: 50px;
+}
+
+.box {
+    background: url(../Images/bg3.jpg);
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid navy;
+    border-radius: 10px;
+    width: 40%;
+    background-color: transparent;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.box h1 {
+    text-align: center;
+    color: white;
+    font-size: 2.7rem;
+}
+
+.box p {
+    text-align: center;
+    color: white;
+}
+
+.p-btn {
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    font-size: 1.1rem;
+    border: 2px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 49.5%;
+}
+
+.p-btn:hover {
+    color: black;
+    background-color: white;
+}
+
+.p-btn a {
+    text-decoration: none;
+}
+
+.banner {
+    height: 199px;
+    width: auto;
+    background-image: url(../Images/deadlock_algos.gif);
+    background-attachment: fixed;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+.navbar {
+    display: flex;
+    background-color: black;
+    padding: 15px;
+    position: sticky;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar li {
+    display: inline-block;
+}
+
+.navbar li a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 10px;
+    margin: 0px;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar li a:hover {
+    color: black;
+    background-color: white;
+    text-decoration: underline;
+}
+
+.navbar li a.active {
+    /* color: lightpink; */
+    font-weight: 400;
+}
+
+.center {
+    background-color: black;
+}

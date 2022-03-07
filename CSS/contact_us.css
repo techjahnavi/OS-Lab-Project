@@ -1,0 +1,481 @@
+/* Resetting CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+}
+ 
+header{
+    margin: 5px;
+    padding: 9px;
+}
+
+.left {
+    display: inline-block;
+    /* border: 2px solid red; */
+    color: white;
+    opacity: 1;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    padding-right: 50px;
+}
+
+.left img {
+    width: 55px;
+    /* height: 30px; */
+}
+
+.center {
+    display: block;
+    margin: 10px auto;
+    width: 25%;
+    opacity: 1;
+    /* To use margin auto, we need display as block and particular width */
+    /* border: 2px solid white; */
+    color: white;
+}
+
+.right {
+    display: inline-block;
+    /* border: 2px solid green; */
+    color: white;
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    opacity: 1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+    display: inline-block;
+}
+
+.navbar li {
+    display: inline-block;
+}
+
+.navbar li a {
+    border-radius: 25px;
+    text-decoration: underline;
+    color: white;
+    text-decoration: none;
+    padding: 25px 10px;
+    margin: 0px;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar li a:hover {
+    color: black;
+    background-color: white;
+}
+
+.navbar li a.active {
+    /* color: lightpink; */
+    font-weight: 400;
+}
+
+.btn {
+    margin: 19px 5px;
+    color: white;
+    background-color: transparent;
+    opacity: 1;
+    padding: 3px 12px;
+    /* border: 1px solid grey; */
+    border-color: transparent;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: lightsteelblue;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 40%;
+    background-color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.box h1 {
+    text-align: center;
+    color: white;
+    font-size: 2.7rem;
+}
+
+.box p {
+    text-align: center;
+    color: white;
+}
+
+.p-btn {
+    background-color: transparent;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    font-size: 1.1rem;
+    border: 2px solid lightslategray;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 49.5%;
+}
+
+.p-btn:hover {
+    color: black;
+    background-color: white;
+}
+
+.p-btn a {
+    text-decoration: none;
+}
+
+/* Contact us part  */
+.work .content{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.work .content .workBx{
+    width: 50%;
+    padding: 20px;
+}
+.work .content .workBx img{
+    max-width: 100%;
+}
+
+
+
+/* Section 4.1 */
+.centeraligned{
+    justify-content: center;
+    align-items: center;
+}
+
+.sec{
+    background: url(../Images/backgroundNew.jpg);
+    padding: 100px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+.sec .content1{
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.mxw800p{
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    font-family:'Poppins', sans-serif ;
+    padding: 15px;
+    border-radius: 10px;
+}
+.sec .content1 .mxw800p h3{
+    font-size: 40px;
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+.sec .content1 .mxw800p p{
+    position: relative;
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    letter-spacing:1px;
+}
+
+
+.teamBx{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 30px;
+    max-width: 100%;
+    margin-top: 40px;
+}
+.teamBx .member{
+    position: relative;
+    background: #000;
+    min-height: 300px;
+    width: 250px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.teamBx .member .imgBx{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.teamBx .member .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.teamBx .member .details{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    transition: 0.2s;
+    opacity: 1;
+}
+.teamBx .member:hover .details{
+    opacity: 1;
+}
+.teamBx .member .details h2{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.teamBx .member .details h2 span{
+    display: block;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+
+
+/* Section 5 */
+
+.contact{
+    background: #111;
+    justify-content: center;
+    align-items: center;
+}
+.formBx{
+    min-width: 60%;
+}
+.formBx form{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.formBx form h3,
+.contactInfo h3{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.formBx form input,
+.formBx form textarea{
+
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 16px;
+    background: transparent;
+    border: none;
+    outline: none;
+    background:#222 ;
+    color: #fff;
+    resize: none;
+}
+.formBx form textarea{
+    min-height: 200px;
+}
+
+.formBx form input::placeholder,
+.formBx form textarea::placeholder{
+
+    color:#999 ;
+}
+
+.formBx form input[type = "submit"]{
+    max-width: 100px;
+    background:#2196f3;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.contactInfo{
+    min-width: 40%;
+
+}
+.contactInfoBx{
+    position: relative;
+}
+.contactInfoBx .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.contactInfoBx .box .icon{
+    min-width: 40px;
+    padding-top:4px ;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    font-size: 24px;
+}
+.contactInfoBx .box  .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+.contactInfoBx .box  .text h3{
+    font-weight: 500;
+    color: #2196f3;
+    margin-bottom: 0;
+}
+
+
+/* Copyright */
+
+.copyright{
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+@media (max-width:991px){
+
+
+    header,header.sticky{
+        padding: 20px 50px;
+        z-index: 1000;
+    }
+    .menu{
+        position: fixed;
+        top: 75px;
+        left: -100%;
+        display: block;
+        padding: 100px 50px;
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+        background: #fff;
+        transition: 0.5s;
+        z-index: 999;
+        border-top: 1px solid rgba(0, 0, 0, 0.2) ;
+    }
+    .menu.active{
+        left: 0;
+    }
+    header ul li a{
+        color: #111;
+        font-size: 24px;
+        margin: 10px;
+    }
+    .toggle{
+        width: 40px;
+        height: 40px;
+        background: url(/images/menu.png);
+
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30px;
+        cursor: pointer;
+
+    }
+    .toggle.active{
+        background: url(/images/close.png);
+
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30px;
+        cursor: pointer;
+    }
+    header.sticky .toggle{
+        filter: invert(1);
+    }
+    section{
+        padding: 100px 50px;
+    }
+    .banner{
+        padding: 150px 50px 100px;
+    }
+    .banner h2{
+        font-size: 1.5em;
+    }
+    .banner h3{
+        font-size: 1em;
+    }
+    .btn{
+        margin-top: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+    .heading h2{
+        font-size: 24px;
+    }
+    .contentBx h3{
+        font-size: 20px;
+    }
+    .content{
+        flex-direction: column;
+    }
+    .w50{
+        margin-bottom:20px;
+    }
+    .alogorithms .content .alogorithmsBx{
+        margin: 10px;
+    }
+    
+
+    /* This place needs to be think about when adding team members  */
+
+    .work .content .workBx{
+        width: 100%;
+        padding: 10px;
+    }
+
+    .contactInfo{
+        margin: 20px 0;
+    }
+
+
+}
+@media (max-width:600px) {
+
+    header,header.sticky{
+        padding: 20px 20px;
+        
+    }
+    .banner{
+        padding: 150px 20px 100px;
+    }
+    section{
+        padding: 100px 20px;
+    }
+}

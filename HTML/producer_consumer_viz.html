@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Producer Consumer</title>
+    <link rel="stylesheet" href="../CSS/producer_consumer_viz.css" />
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="../favicon_io/site.webmanifest">
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" /> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script> -->
+</head>
+
+<body>
+    <header class="header">
+        <!-- Left div/box for logo -->
+        <div class="left">
+            <img src="../Images/logo.png" alt="LOGO">
+        </div>
+
+        <!-- Center div/box for menu -->
+        <div class="center">
+            <ul class="navbar">
+                <li>
+                    <a href="index.html" class="active">Home</a>
+                </li>
+                <li>
+                    <a href="#">Concurrency Algorithms</a>
+                </li>
+            </ul>
+        </div>
+        <div class="visual">
+            <h1>Producer & Consumer Problem</h1>
+            <!-- <p>Red box cell indicates process being produced</p>
+            <p>Green box cell indicates process being consumed</p> -->
+        </div>
+
+        <div class="form">
+            <label for="process">
+                <p class="form-para">Enter the size of Buffer: </p>
+            </label>
+            <input type="text" id="bufferSize" name="bufferSize">
+
+            <label for="time">
+                <p class="form-para">Enter the number of Producers: </p>
+            </label>
+            <input type="text" id="nProducers" name="noOfProducers">
+
+            <label for="time">
+                <p class="form-para">Enter the number of Consumers: </p>
+            </label>
+            <input type="text" id="nConsumers" name="noOfConsumers">
+        </div>
+
+        <div class="pdfLogs" style="margin-left: 650px">
+            <textarea readonly name="status" id="textArea" cols="40" rows="10"></textarea>
+        </div>
+
+        <a href="#"><button class="p-btn" id="submitBTN" onclick="producerConsumer()">Submit</button></a>
+        <a href="#"><button class="p-btn" id="resetBTN" onclick="resetPage()">Reset</button></a>
+
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="../JS/producer_consumer_viz.js"></script>
+
+</body>
+
+</html>

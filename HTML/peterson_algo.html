@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peterson's Algorithm</title>
+    <link rel="stylesheet" href="../CSS/peterson_algo.css">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="../favicon_io/site.webmanifest">
+</head>
+
+<body>
+    <header>
+        <h1 class="header">Peterson's Algorithm</h1>
+    </header>
+    <div class="container">
+        <div class="box">
+            <h2>Explanation</h2>
+            <p>Peterson's Algorithm is used to synchronize two processes. It uses two variables, a bool array flag of
+                size 2 and an int variable turn to accomplish it.</p>
+            <p>In the solution i represents the Consumer and j represents the Producer. Initially the flags are false.
+                When a process wants to execute it's critical section, it sets it's flag to true and turn as the index
+                of the other process. This means
+                that the process wants to execute but it will allow the other process to run first. The process performs
+                busy waiting until the other process has finished it's own critical section.</p>
+            <p>After this the current process enters it's critical section and adds or removes a random number from the
+                shared buffer. After completing the critical section, it sets it's own flag to false, indication it does
+                not wish to execute anymore.</p>
+            <p>The program runs for a fixed amount of time before exiting. This time can be changed by changing value of
+                the macro RT.</p>
+        </div>
+        <div class="box">
+            <h2>Algorithm</h2>
+            <p>flag[j] = true;
+            <p>turn = i;</p>
+            <p>while (flag[i] == true && turn == i)</p>
+            <p class="indent" id="indent">flag[j] = false;</p>
+            <p class="indent">flag [i] = true;</p>
+            <p class="indent">turn = j;</p>
+            <p class="indent">while (flag[j] == true && turn == j)</p>
+            <p class="double-indent">flag[i] = false;</p>
+        </div>
+    </div>
+</body>
+
+</html>
