@@ -61,7 +61,7 @@ body {
 }
 
 .box {
-    background: url(../Images/bg3.jpg);
+/*     background: url(../Images/bg3.jpg); */
     margin: 10px;
     padding: 10px;
     border: 2px solid navy;
